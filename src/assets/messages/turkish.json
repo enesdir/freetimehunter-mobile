@@ -1,0 +1,40 @@
+{
+  "introduction": {
+    "title": "Hoşgeldiniz",
+    "heroText": "Yüzlerce eğlenceli fikir. Sıkılıyor musunuz? Yapacak birşey bulamıyor musunuz? Sizin için hazırladığımız fikirleri bir gözden geçirin!",
+    "supportButton": "Destek",
+    "enterButton": "Giriş"
+  },
+  "support": {
+    "headerTitle": "Destek",
+    "title": "Destek",
+    "heroText": "Yardıma ihtiyacınız mı var.",
+    "settingButton": "Ayarlar"
+  },
+  "alertDialog": {
+    "clearStorageTitle": "Uygulama Ayarları",
+    "clearStorageBody": "Uygulama ayarları başarıyla sıfırlandı.",
+    "clearStorageButton": "Tamam",
+    "emptyInternetTitle": "Internet Bağlantısı Yok!",
+    "emptyInternetBody": "Internet baglantınız yok gözüküyor. İnternet bağlantınızı kontrol ettikten sonra Free Time Hunter uygulamasına girmeyi tekrar deneyin!"
+  },
+  "settings": {
+    "headerTitle": "Ayarlar",
+    "settingsTitle": "Ayarlar",
+    "heroText": "Ayarlar tanıtım",
+    "appearanceTitle": "Tema",
+    "actualAppearanceText": "Mevcut Görünüm",
+    "appearanceHero": "Bu alanda uygulamanın görünümünü kişiselleştirebilirsiniz.",
+    "appearanceText": "Mevcut Görünüm bir değişiklik yapmadığınızda system ayarlarını kullanır.",
+    "switchAppearanceText": "Görünümünü değiştirmek için basın:",
+    "clearStorageTitle": "Uygulama Ayarları Sıfırla",
+    "clearStorageHero": "Uygulama ayarları  ve tercihlerinizi sıfırlar.",
+    "clearStorageText": "Uygulama içinde kullandığınız notları da sıfırlamış olursunuz.",
+    "clearStorageButton": "Sıfırla"
+  },
+  "filters": "Filtreler",
+  "filtersTitle": "Önerilen Filtreler",
+  "filtersText": "To filter detailed information about a , you can classify and sort your results in ways that are relevant to you.",
+  "filtersSortBy": "Sırala",
+  "filtersSortByOptions": ["En yeniden", "Eskiye", "İsimle (A-Z)"]
+}

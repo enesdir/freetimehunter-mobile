@@ -1,0 +1,39 @@
+{
+  "introduction": {
+    "title": "Welcome",
+    "heroText": "Fun Things to Do When Bored To Help You Stay Sane. So, when it feels like the seconds are just dragging on, in this app you can find fun things to do when you’re bored!",
+    "supportButton": "Support",
+    "enterButton": "Enter"
+  },
+  "support": {
+    "headerTitle": "Support",
+    "title": "Support",
+    "heroText": "Do you need help?",
+    "settingButton": "Settings"
+  },
+  "alertDialog": {
+    "clearStorageTitle": "Application Settings",
+    "clearStorageBody": "Application settings have been reset successfully.",
+    "clearStorageButton": "OK",
+    "emptyInternetTitle": "No internet connection!",
+    "emptyInternetBody": "Your internet connection is down. Please fix it and then you can continue using Github App!"
+  },
+  "settings": {
+    "headerTitle": "Settings",
+    "settingsTitle": "ApplicationSettings",
+    "heroText": "Settings Hero",
+    "appearanceTitle": "Theme",
+    "actualAppearanceText": "Actual Appearance",
+    "appearanceHero": "In this area you can customize the appearance of the application.",
+    "appearanceText": "Current appearance uses system settings when you do not make any changes.",
+    "switchAppearanceText": "Press to Change App Appearance:",
+    "clearStorageTitle": "Reset All Data",
+    "clearStorageHero": "Reset application settings and preferences.",
+    "clearStorageText": "You will also reset the notes you use in the application.",
+    "clearStorageButton": "Remove"
+  },
+  "filters": "Filters",
+  "filtersTitle": "Suggested filters",
+  "filtersSortBy": "Sırala",
+  "filtersSortByOptions": ["Newest", "Oldest", "By name (A-Z)"]
+}

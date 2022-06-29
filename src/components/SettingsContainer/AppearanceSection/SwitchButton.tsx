@@ -1,18 +1,19 @@
 import React, { useCallback } from 'react';
-import Spacer from '@/components/Spacer';
+import { Pressable } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   Easing,
 } from 'react-native-reanimated';
-import { Pressable } from 'react-native';
+
+import AppearanceIcon from './AppearanceIcon';
+import { SwitchButtonContainer, SwitchCircleInner } from './styles';
+
+import Spacer from '@/components/Spacer';
+import { Text } from '@/components/Typography/Text';
 import { useAppearance } from '@/providers/AppearanceProvider';
 import { useLanguage } from '@/providers/LocalizationProvider';
-
-import { SwitchButtonContainer, SwitchCircleInner } from './styles';
-import { Text } from '@/components/Typography/Text';
-import AppearanceIcon from './AppearanceIcon';
 import { deviceDimensions } from '@/utils/device-dimensions';
 
 const SwitchButton = (): JSX.Element => {

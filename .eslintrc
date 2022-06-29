@@ -1,8 +1,32 @@
 {
   "root": true,
-  "extends": ["@react-native-community", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "@react-native-community",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended"
+  ],
   "rules": {
     "react/react-in-jsx-scope": 0,
-    "react/jsx-uses-react": 0
+    "react/jsx-uses-react": 0,
+    "import/no-unresolved": 0,
+    "import/namespace": 0,
+    "import/named": 0,
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent"],
+          ["sibling", "index"],
+          "type",
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   }
 }

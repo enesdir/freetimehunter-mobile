@@ -1,10 +1,12 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import UserTasks from '@/screens/UserTasks';
-import Tasks from '@/screens/Tasks';
-import { TabStackParams } from '../types/navigation';
 import { FC } from 'react';
 
+import { TabStackParams } from '../types/navigation';
+
 import { screenDefaultOptions, tabBarDefaultOptions } from './options';
+
+import Tasks from '@/screens/Tasks';
+import UserTasks from '@/screens/UserTasks';
 
 /**
  * A bottom tab navigator displays tab buttons on the bottom of the display to switch screens.

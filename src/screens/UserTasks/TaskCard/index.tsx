@@ -1,28 +1,9 @@
-import { db } from '@/services';
-import { ITask } from '@/types/task';
-import { User } from 'firebase/auth';
-import { deleteDoc, doc } from 'firebase/firestore';
-import { FC, useCallback } from 'react';
-import { CheckBox, Container, PriorityIndicator, Title } from './styles';
+import { FC } from 'react';
 
-type TaskCardProps = {
-  task: ITask;
-  user: User;
-};
+import { Container } from './styles';
 
-const TaskCard: FC<TaskCardProps> = ({ task, user }) => {
-  const handleTaskCheck = useCallback(async () => {
-    const docRef = doc(db, user.uid, task.id);
-    await deleteDoc(docRef);
-  }, [task, user]);
-
-  return (
-    <Container>
-      <CheckBox onPress={handleTaskCheck} />
-      <Title>{task.title}</Title>
-      <PriorityIndicator level={task.priority} />
-    </Container>
-  );
+const TaskCard: FC = () => {
+  return <Container />;
 };
 
 export default TaskCard;

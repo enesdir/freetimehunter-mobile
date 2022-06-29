@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import { LogBox } from 'react-native';
-import useCachedResources from '@/hooks/useCachedResources';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
+import useCachedResources from '@/hooks/useCachedResources';
 import Main from '@/Main';
 import { AppProvider } from '@/providers/AppProvider';
 

@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useMemo, useRef, useState, ReactNode } from 'react';
 import * as Localization from 'expo-localization';
-import { TDefaultLangKey } from '@/utils/localization/translations';
-import { handleLocalization } from '@/utils/localization/actions';
-import { translate } from '@/utils/localization/translate';
-import { defaultLanguage } from '@/utils/localization/constants';
+import React, { useContext, useEffect, useMemo, useRef, useState, ReactNode } from 'react';
 import { AppState, AppStateStatus, Platform } from 'react-native';
+
+import { handleLocalization } from '@/utils/localization/actions';
+import { defaultLanguage } from '@/utils/localization/constants';
+import { translate } from '@/utils/localization/translate';
+import { TDefaultLangKey } from '@/utils/localization/translations';
 
 export const LocalizationContext = React.createContext({
   translate,

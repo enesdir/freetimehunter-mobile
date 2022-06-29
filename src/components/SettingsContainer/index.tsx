@@ -1,10 +1,11 @@
-import Spacer from '@/components/Spacer';
-import AppearanceSection from '@/components/SettingsContainer/AppearanceSection';
-import { useLanguage } from '@/providers/LocalizationProvider';
-import Container from '@/components/Container';
-import { Content } from './styles';
-import { Text, Title } from '@/components/Typography/Text';
 import ResetSection from './ResetSection';
+import { Content } from './styles';
+
+import Container from '@/components/Container';
+import AppearanceSection from '@/components/SettingsContainer/AppearanceSection';
+import Spacer from '@/components/Spacer';
+import { Text, Title } from '@/components/Typography/Text';
+import { useLanguage } from '@/providers/LocalizationProvider';
 
 const SettingsContainer = (): JSX.Element => {
   const { translate } = useLanguage();

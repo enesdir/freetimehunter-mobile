@@ -1,6 +1,6 @@
+import { SizesRecordType } from '@/types/typography';
 import { readonly } from '@/utils/readonly';
 import { size } from '@/utils/styleSizeHelpers';
-import { SizesRecordType } from '@/types/typography';
 /**
  * Gaps @constant {object}
  * @readonly

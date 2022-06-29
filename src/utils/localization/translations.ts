@@ -1,6 +1,8 @@
-import { readonly } from '@/utils/readonly';
-import defaultLangSource from '../../assets/messages/english.json';
 import i18n from 'i18n-js';
+
+import defaultLangSource from '../../assets/messages/english.json';
+
+import { readonly } from '@/utils/readonly';
 /**
  * Translations
  * @description An object that contains all translations

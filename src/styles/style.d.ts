@@ -1,5 +1,6 @@
-import { themes } from './theme';
 import { DefaultTheme } from 'styled-components/native';
+
+import { themes } from './theme';
 
 /**
  * @description Extend the default types of the styled-components theme

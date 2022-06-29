@@ -1,11 +1,13 @@
 import React, { useEffect, useState, ReactNode, useCallback, useMemo } from 'react';
 import { useColorScheme } from 'react-native';
-import { ThemeProvider } from 'styled-components';
-import { loadString, saveString } from '@/utils/storage';
-import { themes } from '@/styles/theme';
-import { createCtx } from './createCtx';
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import { ThemeProvider } from 'styled-components';
+
+import { createCtx } from './createCtx';
+
+import { themes } from '@/styles/theme';
 import { AppearanceType } from '@/types/ui';
+import { loadString, saveString } from '@/utils/storage';
 
 type AppearanceProviderProps = {
   children: ReactNode;

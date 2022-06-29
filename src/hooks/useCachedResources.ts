@@ -1,13 +1,12 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
-import * as SplashScreen from 'expo-splash-screen';
-import { useState, useEffect } from 'react';
-import * as Font from 'expo-font';
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import {
   Poppins_400Regular,
   Poppins_500Medium,
   Poppins_600SemiBold,
 } from '@expo-google-fonts/poppins';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import * as Font from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+import { useState, useEffect } from 'react';
 
 export default function useCachedResources() {
   const [isLoadingComplete, setLoadingComplete] = useState(false);

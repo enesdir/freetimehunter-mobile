@@ -1,10 +1,11 @@
-import { Platform } from 'react-native';
 import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
+import { Platform } from 'react-native';
 
+import type { TabScreenOptions } from '@/types/navigation';
+
+import TabBarIcon from '@/components/TabBarIcon';
 import { colors } from '@/styles/color';
 import { fonts } from '@/styles/typography';
-import type { TabScreenOptions } from '@/types/navigation';
-import TabBarIcon from '@/components/TabBarIcon';
 
 export const tabBarDefaultOptions: TabScreenOptions = ({ route }) => ({
   headerTitleAlign: 'center',

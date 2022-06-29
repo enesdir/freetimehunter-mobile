@@ -1,6 +1,7 @@
-import styled, { css } from 'styled-components/native';
-import { TextProps } from 'react-native';
 import { shade, tint } from 'polished';
+import { TextProps } from 'react-native';
+import styled, { css } from 'styled-components/native';
+
 import { Colors } from '@/styles/colors';
 
 type PriorityIndicatorProps = {

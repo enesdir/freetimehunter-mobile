@@ -1,10 +1,12 @@
-import Spacer from '@/components/Spacer';
-import { useLanguage } from '@/providers/LocalizationProvider';
-import Container from '@/components/Container';
-import { Content, Button, Label } from './styles';
-import { Text, Title } from '@/components/Typography/Text';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+import { Content, Button, Label } from './styles';
+
+import Container from '@/components/Container';
+import Spacer from '@/components/Spacer';
+import { Text, Title } from '@/components/Typography/Text';
+import { useLanguage } from '@/providers/LocalizationProvider';
 import { RootStackParams } from '@/types/navigation';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParams, 'Onboard'>;

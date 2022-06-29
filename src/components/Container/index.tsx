@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { KeyboardAvoidingView, Platform } from 'react-native';
-import Scroll from '@/components/Scroll';
 
 import { Content } from '@/components/Content';
+import Scroll from '@/components/Scroll';
 
 type ContainerProps = {
   children: ReactNode;

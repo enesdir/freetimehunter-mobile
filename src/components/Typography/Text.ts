@@ -1,6 +1,7 @@
-import styled, { css } from 'styled-components/native';
-import { FontWeightType, SizesType } from '@/types/typography';
 import { shade } from 'polished';
+import styled, { css } from 'styled-components/native';
+
+import { FontWeightType, SizesType } from '@/types/typography';
 
 export interface StyledTextProps {
   weight?: FontWeightType;

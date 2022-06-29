@@ -1,7 +1,9 @@
 import * as Localization from 'expo-localization';
-import { readonly } from '@/utils/readonly';
-import { TTranslateAttrs } from './translations';
 import i18n from 'i18n-js';
+
+import { TTranslateAttrs } from './translations';
+
+import { readonly } from '@/utils/readonly';
 
 export const defaultLanguage: Localization.Localization = readonly({
   locale: 'en',

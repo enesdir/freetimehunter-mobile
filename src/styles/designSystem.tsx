@@ -1,8 +1,9 @@
 import { DarkTheme, DefaultTheme, Theme } from '@react-navigation/native';
 import { tint } from 'polished';
 
-import { Colors } from './colors';
 import { AppearanceType } from '../types/ui';
+
+import { Colors } from './colors';
 
 export const getNavigationTheme = (appearance: AppearanceType): Theme => {
   // for more information - https://reactnavigation.org/docs/themes

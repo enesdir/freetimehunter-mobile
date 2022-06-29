@@ -1,6 +1,6 @@
 import { BottomTabNavigationOptions } from '@react-navigation/bottom-tabs';
-import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 import { RouteProp, NavigatorScreenParams } from '@react-navigation/native';
+import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 export type TabStack = 'Tasks' | 'UserTasks';
 export type CommonStack = 'Settings' | 'Support';

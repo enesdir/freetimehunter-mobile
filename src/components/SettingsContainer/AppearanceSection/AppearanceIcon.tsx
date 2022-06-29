@@ -1,7 +1,8 @@
-import React, { FC } from 'react';
 import { Ionicons } from '@expo/vector-icons';
-import { useAppearance } from '@/providers/AppearanceProvider';
+import React, { FC } from 'react';
 import { useTheme } from 'styled-components';
+
+import { useAppearance } from '@/providers/AppearanceProvider';
 import { deviceDimensions } from '@/utils/device-dimensions';
 
 type AppearanceIconsProps = {

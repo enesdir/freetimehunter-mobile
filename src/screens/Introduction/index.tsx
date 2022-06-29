@@ -1,9 +1,11 @@
 import { FC } from 'react';
-import { useLanguage } from '@/providers/LocalizationProvider';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import NavigationButtons from './NavigationButtons';
 import { Banner, Container } from './styles';
-import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { Title, Text } from '@/components/Typography/Text';
+import { useLanguage } from '@/providers/LocalizationProvider';
 
 const Introduction: FC = () => {
   const { translate } = useLanguage();

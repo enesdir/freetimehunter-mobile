@@ -1,9 +1,11 @@
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FC, useEffect } from 'react';
 import { Alert, Button } from 'react-native';
+
 import { Container, Text } from './styles';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
 import { RootStackParams } from '@/types/navigation';
-import { useNavigation } from '@react-navigation/native';
 import { clear } from '@/utils/storage';
 type NavigationProp = NativeStackNavigationProp<RootStackParams, 'App'>;
 

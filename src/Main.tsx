@@ -1,9 +1,8 @@
-import { RootNavigator } from '@/navigation';
-
-import React, { FC } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-
 import { StatusBar } from 'expo-status-bar';
+import React, { FC } from 'react';
+
+import { RootNavigator } from '@/navigation';
 import { useAppearance } from '@/providers/AppearanceProvider';
 import { getNavigationTheme } from '@/styles/designSystem';
 

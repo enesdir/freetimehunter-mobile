@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
+
+import { AppearanceProvider } from './AppearanceProvider';
 import { LocalizationProvider } from './LocalizationProvider';
 import { SettingsProvider } from './SettingsProvider';
-import { AppearanceProvider } from './AppearanceProvider';
 
 interface AppProviderProps {
   children: ReactNode;

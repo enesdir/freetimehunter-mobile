@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components/native';
 import { ScrollViewProps, ImageProps } from 'react-native';
+import styled, { css } from 'styled-components/native';
 type ButtonProps = { primary?: boolean };
 type LabelProps = { primary?: boolean };
 

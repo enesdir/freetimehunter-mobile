@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
 import SupportContainer from '@/components/SupportContainer';
 
 const Support: FC = () => {

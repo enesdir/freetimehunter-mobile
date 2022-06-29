@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import { PressableProps } from 'react-native';
+
 import { Container } from './styles';
+
 import { Text } from '@/components/Typography/Text';
 interface IButtonProps extends PressableProps {
   label: string;

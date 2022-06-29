@@ -1,10 +1,12 @@
 import React from 'react';
-import Spacer from '@/components/Spacer';
-import { useLanguage } from '@/providers/LocalizationProvider';
 
-import { Text } from '@/components/Typography/Text';
 import { SectionContainer } from '../styles';
+
 import ClearStorageButton from './ClearStorageButton';
+
+import Spacer from '@/components/Spacer';
+import { Text } from '@/components/Typography/Text';
+import { useLanguage } from '@/providers/LocalizationProvider';
 
 const ResetSection = (): JSX.Element => {
   const { translate } = useLanguage();

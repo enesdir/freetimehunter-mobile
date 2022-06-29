@@ -1,10 +1,12 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Introduction from '@/screens/Introduction';
-import { OnboardStackParams } from '../types/navigation';
 import { FC } from 'react';
-import Support from '@/screens/Support';
+
+import { OnboardStackParams } from '../types/navigation';
+
 import { useLanguage } from '@/providers/LocalizationProvider';
+import Introduction from '@/screens/Introduction';
 import Settings from '@/screens/Settings';
+import Support from '@/screens/Support';
 
 const { Navigator, Screen } = createNativeStackNavigator<OnboardStackParams>();
 

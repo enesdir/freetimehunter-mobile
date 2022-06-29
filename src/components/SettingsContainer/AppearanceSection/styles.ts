@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components/native';
 import { tint } from 'polished';
+import styled, { css } from 'styled-components/native';
 
 export const LabelContainer = styled.View`
   flex-direction: row;

@@ -1,10 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { RootStackParams } from '@/types/navigation';
 import { FC } from 'react';
+
 import { Button, Container, Label } from './styles';
-import { useSettings } from '@/providers/SettingsProvider';
+
 import { useLanguage } from '@/providers/LocalizationProvider';
+import { useSettings } from '@/providers/SettingsProvider';
+import { RootStackParams } from '@/types/navigation';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParams, 'Onboard'>;
 

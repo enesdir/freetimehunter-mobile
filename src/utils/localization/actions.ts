@@ -1,8 +1,9 @@
 import * as Localization from 'expo-localization';
 import i18n from 'i18n-js';
+
 import { defaultLanguage } from './constants';
-import { translations } from './translations';
 import { translate } from './translate';
+import { translations } from './translations';
 
 export const parseLang = (locale: string) => String(locale.split('-')[0]);
 

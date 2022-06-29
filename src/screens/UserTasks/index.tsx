@@ -1,4 +1,6 @@
-import { AddIcon, Container, Divider, Fab } from './styles';
+import { FC } from 'react';
+
+import { Container } from './styles';
 
 const UserTasks: FC = () => {
   return <Container />;

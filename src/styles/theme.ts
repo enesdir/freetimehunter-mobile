@@ -1,8 +1,9 @@
-import { readonly } from '@/utils/readonly';
-import { parseSize, size } from '@/utils/styleSizeHelpers';
 import { Colors } from './colors';
 import { gaps } from './gaps';
 import { fonts } from './typography';
+
+import { readonly } from '@/utils/readonly';
+import { parseSize, size } from '@/utils/styleSizeHelpers';
 
 const light = {
   colors: {

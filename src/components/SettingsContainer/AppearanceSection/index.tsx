@@ -1,11 +1,14 @@
 import React from 'react';
-import Spacer from '@/components/Spacer';
-import { useLanguage } from '@/providers/LocalizationProvider';
+
+import { SectionContainer } from '../styles';
+
+import AppearanceIcon from './AppearanceIcon';
 import { LabelContainer } from './styles';
 import SwitchButton from './SwitchButton';
-import AppearanceIcon from './AppearanceIcon';
+
+import Spacer from '@/components/Spacer';
 import { Text } from '@/components/Typography/Text';
-import { SectionContainer } from '../styles';
+import { useLanguage } from '@/providers/LocalizationProvider';
 
 const AppearanceSection = (): JSX.Element => {
   const { translate } = useLanguage();

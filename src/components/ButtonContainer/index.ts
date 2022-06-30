@@ -1,7 +1,7 @@
 import { tint } from 'polished';
 import styled, { css } from 'styled-components/native';
 
-export const Container = styled.View`
+export const ButtonContainer = styled.View`
   ${({ theme }) => css`
     flex-direction: row;
     aspect-ratio: 5.6;
@@ -9,6 +9,5 @@ export const Container = styled.View`
     border-radius: 16.25px;
     background-color: ${tint(0.1, theme.colors.background)};
     overflow: hidden;
-    margin-top: 20%;
   `}
 `;

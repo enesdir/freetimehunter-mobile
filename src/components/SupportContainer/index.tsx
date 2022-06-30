@@ -4,6 +4,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Content } from './styles';
 
 import Button from '@/components/Button';
+import { ButtonContainer } from '@/components/ButtonContainer';
 import Container from '@/components/Container';
 import Spacer from '@/components/Spacer';
 import { Text } from '@/components/Typography/Text';
@@ -26,15 +27,16 @@ const SupportContainer = (): JSX.Element => {
       </Text>
       <Spacer size={32} />
       <Content>
-        <Button
-          primary
-          buttonSize="full"
-          onPress={() => navigate('Onboard', { screen: 'Settings' })}
-        >
-          {translate('support.settingButton')}
-        </Button>
+        <ButtonContainer>
+          <Button
+            primary
+            buttonSize="full"
+            onPress={() => navigate('Onboard', { screen: 'Settings' })}
+          >
+            {translate('support.settingButton')}
+          </Button>
+        </ButtonContainer>
       </Content>
-      <Spacer size={64} />
     </Container>
   );
 };

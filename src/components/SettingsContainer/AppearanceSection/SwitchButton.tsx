@@ -48,7 +48,7 @@ const SwitchButton = (): JSX.Element => {
   return (
     <SwitchButtonContainer>
       <Text size="lg">{translate('settings.switchAppearanceText')}</Text>
-      <Spacer size={24} />
+      <Spacer size={8} />
       <Pressable
         style={{ justifyContent: 'center', alignContent: 'center' }}
         onPress={() => handleSwitchCircleX()}

@@ -2,9 +2,8 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FC } from 'react';
 
-import { Container } from './styles';
-
 import Button from '@/components/Button';
+import { ButtonContainer } from '@/components/ButtonContainer';
 import { useLanguage } from '@/providers/LocalizationProvider';
 import { useSettings } from '@/providers/SettingsProvider';
 import { RootStackParams } from '@/types/navigation';
@@ -22,7 +21,7 @@ const NavigationButtons: FC = () => {
   };
 
   return (
-    <Container>
+    <ButtonContainer>
       <Button
         secondary
         buttonSize="semiWidth"
@@ -33,7 +32,7 @@ const NavigationButtons: FC = () => {
       <Button primary buttonSize="semiWidth" onPress={handleApp}>
         {translate('introduction.enterButton')}
       </Button>
-    </Container>
+    </ButtonContainer>
   );
 };
 

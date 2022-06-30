@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native';
 
-export type ButtonSize = 'full' | 'semiWidth' | 'semiHeight';
+export type ButtonSize = 'full' | 'semi' | 'semiWidth' | 'semiHeight';
 export interface StyledButtonProps {
   primary?: boolean;
   secondary?: boolean;
@@ -32,6 +32,11 @@ export const StyledButton = styled.Pressable<StyledButtonProps>`
     css`
       width: 100%;
       height: 100%;
+    `}
+    ${buttonSize === 'semi' &&
+    css`
+      width: 50%;
+      height: 50%;
     `}
     ${buttonSize === 'semiWidth' &&
     css`

@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
-import { KeyboardAvoidingView, Platform } from 'react-native';
+import { Platform } from 'react-native';
+
+import { StyledKeyboardAvoidingView } from './styles';
 
 import { Content } from '@/components/Content';
 import Scroll from '@/components/Scroll';
@@ -9,15 +11,11 @@ type ContainerProps = {
 };
 
 const Container = ({ children }: ContainerProps): JSX.Element => (
-  <KeyboardAvoidingView
-    style={{ flex: 1 }}
-    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    enabled
-  >
+  <StyledKeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} enabled>
     <Content>
       <Scroll>{children}</Scroll>
     </Content>
-  </KeyboardAvoidingView>
+  </StyledKeyboardAvoidingView>
 );
 
 export default Container;

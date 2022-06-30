@@ -13,19 +13,20 @@ const SettingsContainer = (): JSX.Element => {
 
   return (
     <Container>
-      <Spacer size={32} />
       <Title>{translate('settings.headerTitle')}</Title>
-      <Spacer size={32} />
-      <Text primary size="3xl">
+      <Spacer size={4} />
+      <Text primary size="2xl" weight="bold">
         {translate('settings.appearanceTitle')}
       </Text>
-      <Spacer size={32} />
+      <Spacer size={4} />
       <Content>
         <AppearanceSection />
       </Content>
-      <Spacer size={64} />
-      <Text>{translate('settings.clearStorageTitle')}</Text>
-      <Spacer size={32} />
+      <Spacer size={4} />
+      <Text primary weight="bold" size="2xl">
+        {translate('settings.clearStorageTitle')}
+      </Text>
+      <Spacer size={4} />
       <Content>
         <ResetSection />
       </Content>

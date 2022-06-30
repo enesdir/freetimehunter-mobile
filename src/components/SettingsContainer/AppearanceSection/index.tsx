@@ -24,11 +24,10 @@ const AppearanceSection = (): JSX.Element => {
         <Text weight="bold" size="md">
           {translate('settings.actualAppearanceText')}
         </Text>
-        <Spacer size={20} horizontal />
+        <Spacer size={8} horizontal />
         <AppearanceIcon size={20} />
       </LabelContainer>
-      <Spacer size={16} />
-      <Spacer size={32} />
+      <Spacer size={8} />
       <SwitchButton />
     </SectionContainer>
   );

@@ -1,14 +1,19 @@
 import React, { ReactNode } from 'react';
-import { ScrollView, ScrollViewProps } from 'react-native';
+import { ScrollViewProps } from 'react-native';
 
+import { StyledScrollView } from './styles';
 interface ScrollProps extends ScrollViewProps {
   children: ReactNode;
 }
 
 const Scroll = ({ children, ...rest }: ScrollProps): JSX.Element => (
-  <ScrollView keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false} {...rest}>
+  <StyledScrollView
+    keyboardShouldPersistTaps="handled"
+    showsVerticalScrollIndicator={false}
+    {...rest}
+  >
     {children}
-  </ScrollView>
+  </StyledScrollView>
 );
 
 export default Scroll;

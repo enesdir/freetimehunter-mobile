@@ -7,7 +7,7 @@ interface SpaceProps {
 
 const Spacer = styled.View<SpaceProps>`
   ${({ theme, horizontal, size }) =>
-    horizontal ? `width: ${theme.utils.size(size / 4)}` : `height: ${theme.utils.size(size / 4)}`}
+    horizontal ? `width: ${theme.utils.size(size)}` : `height: ${theme.utils.size(size)}`}
 `;
 
 export default Spacer;

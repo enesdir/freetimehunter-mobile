@@ -13,7 +13,7 @@ export interface StyledTextProps {
 }
 
 export const Text = styled.Text<StyledTextProps>`
-  ${({ theme, weight = 'regular', size = 'xl', primary, secondary, warning, tertiary }) => css`
+  ${({ theme, weight = 'regular', size = 'xl', primary, secondary, tertiary, warning }) => css`
     color: ${theme.colors.text};
     font-family: ${theme.fonts.family[weight]};
     font-size: ${theme.fonts.sizes[size]};
@@ -26,28 +26,13 @@ export const Text = styled.Text<StyledTextProps>`
     css`
       color: ${shade(0.5, theme.colors.text)};
     `}
-    ${warning &&
-    css`
-      color: ${theme.colors.text};
-    `}
     ${tertiary &&
     css`
       color: ${theme.colors.background};
-      line-height: ${theme.gaps.lg};
     `}
-  `}
-`;
-
-export const LargeText = styled(Text)`
-  ${({ theme }) => css`
-    font-size: ${theme.fonts.sizes['3xl']};
-  `}
-`;
-export const Title = styled(Text).attrs(() => ({ weight: 'bold', size: '6xl' }))`
-  ${({ theme }) => css`
-    line-height: ${theme.gaps['5xl']};
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
+    ${warning &&
+    css`
+      color: ${theme.colors.red};
+    `}
   `}
 `;

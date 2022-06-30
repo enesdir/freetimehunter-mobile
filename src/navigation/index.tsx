@@ -1,6 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { tint } from 'polished';
-import { FC, useContext, useEffect, useState } from 'react';
+import { FC } from 'react';
 
 import AppNavigator from './AppNavigator';
 import AuthNavigator from './OnboardNavigator';

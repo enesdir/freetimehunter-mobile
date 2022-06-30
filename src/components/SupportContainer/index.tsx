@@ -1,11 +1,13 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import { Content, Button, Label } from './styles';
+import { Content } from './styles';
 
+import Button from '@/components/Button';
 import Container from '@/components/Container';
 import Spacer from '@/components/Spacer';
-import { Text, Title } from '@/components/Typography/Text';
+import { Text } from '@/components/Typography/Text';
+import { Title } from '@/components/Typography/Title';
 import { useLanguage } from '@/providers/LocalizationProvider';
 import { RootStackParams } from '@/types/navigation';
 
@@ -24,8 +26,12 @@ const SupportContainer = (): JSX.Element => {
       </Text>
       <Spacer size={32} />
       <Content>
-        <Button primary onPress={() => navigate('Onboard', { screen: 'Settings' })}>
-          <Label primary>{translate('support.settingButton')} </Label>
+        <Button
+          primary
+          buttonSize="full"
+          onPress={() => navigate('Onboard', { screen: 'Settings' })}
+        >
+          {translate('support.settingButton')}
         </Button>
       </Content>
       <Spacer size={64} />

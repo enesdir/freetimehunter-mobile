@@ -4,7 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import NavigationButtons from './NavigationButtons';
 import { Banner, Container } from './styles';
 
-import { Title, Text } from '@/components/Typography/Text';
+import { Text } from '@/components/Typography/Text';
+import { Title } from '@/components/Typography/Title';
 import { useLanguage } from '@/providers/LocalizationProvider';
 
 const Introduction: FC = () => {

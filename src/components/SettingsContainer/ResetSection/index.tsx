@@ -19,7 +19,7 @@ const ResetSection = (): JSX.Element => {
       <Text weight="bold" size="md" warning>
         {translate('settings.clearStorageText')}
       </Text>
-      <Spacer size={64} />
+      <Spacer size={32} />
       <ClearStorageButton />
     </SectionContainer>
   );

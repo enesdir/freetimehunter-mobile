@@ -4,7 +4,8 @@ import { Content } from './styles';
 import Container from '@/components/Container';
 import AppearanceSection from '@/components/SettingsContainer/AppearanceSection';
 import Spacer from '@/components/Spacer';
-import { Text, Title } from '@/components/Typography/Text';
+import { Text } from '@/components/Typography/Text';
+import { Title } from '@/components/Typography/Title';
 import { useLanguage } from '@/providers/LocalizationProvider';
 
 const SettingsContainer = (): JSX.Element => {

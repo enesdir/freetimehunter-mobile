@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
-import { Alert, Button } from 'react-native';
+import { Alert } from 'react-native';
 
+import Button from '@/components/Button';
 import { useLanguage } from '@/providers/LocalizationProvider';
 import { clear } from '@/utils/storage';
 
@@ -21,9 +22,9 @@ const ClearStorageButton = (): JSX.Element => {
     );
 
   return (
-    <>
-      <Button onPress={() => clearStorage()} title={translate('settings.clearStorageButton')} />
-    </>
+    <Button buttonSize="semiHeight" warning onPress={() => clearStorage()}>
+      {translate('settings.clearStorageButton')}
+    </Button>
   );
 };
 

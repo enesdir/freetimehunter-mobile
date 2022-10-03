@@ -9,7 +9,11 @@
     "headerTitle": "Support",
     "title": "Support",
     "heroText": "Do you need help?",
-    "settingButton": "Settings"
+    "settingButton": "Settings",
+    "helpMessages": [
+      { "title": "Settings", "body": "Settings" },
+      { "title": "Settings", "body": "Settings" }
+    ]
   },
   "alertDialog": {
     "clearStorageTitle": "Application Settings",
@@ -31,6 +35,12 @@
     "clearStorageHero": "Reset application settings and preferences.",
     "clearStorageText": "You will also reset the notes you use in the application.",
     "clearStorageButton": "Remove"
+  },
+  "tasks": {
+    "headerTitle": "Tasks"
+  },
+  "userTasks": {
+    "headerTitle": "Your Tasks"
   },
   "filters": "Filters",
   "filtersTitle": "Suggested filters",

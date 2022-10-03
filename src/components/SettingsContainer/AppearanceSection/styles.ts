@@ -13,8 +13,8 @@ export const SwitchCircleInner = styled.View`
     border-radius: 50px;
     height: ${theme.utils.size(26)};
     width: ${theme.utils.size(70)};
-    background-color: ${tint(0.1, theme.colors.background)};
-    box-shadow: 0px 20px 20px ${theme.colors.background};
+    background-color: ${tint(0.1, theme.colors.secondaryBackground)};
+    box-shadow: 0px 20px 20px ${theme.colors.secondaryBackground};
     position: relative;
   `}
 `;

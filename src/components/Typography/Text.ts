@@ -20,15 +20,15 @@ export const Text = styled.Text<StyledTextProps>`
     line-height: ${theme.gaps.xl};
     ${primary &&
     css`
-      color: ${theme.colors.text};
+      color: ${theme.colors.primary};
     `}
     ${secondary &&
     css`
-      color: ${shade(0.5, theme.colors.text)};
+      color: ${shade(0.5, theme.colors.secondary)};
     `}
     ${tertiary &&
     css`
-      color: ${theme.colors.background};
+      color: ${theme.colors.primary};
     `}
     ${warning &&
     css`

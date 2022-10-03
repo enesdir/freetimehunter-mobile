@@ -1,6 +1,6 @@
-import i18n from 'i18n-js';
-
 import defaultLangSource from '../../assets/messages/english.json';
+
+import type { TranslateOptions } from 'i18n-js';
 
 import { readonly } from '@/utils/readonly';
 /**
@@ -27,4 +27,4 @@ type RecursiveKeyOf<TObj extends Record<string, any>> = {
 export type TDefaultLangSource = typeof defaultLangSource;
 export type TxKeyPath = RecursiveKeyOf<TDefaultLangSource>;
 
-export type TTranslateAttrs = (key: TxKeyPath, config?: i18n.TranslateOptions) => string;
+export type TTranslateAttrs = (key: TxKeyPath, config?: TranslateOptions) => string;

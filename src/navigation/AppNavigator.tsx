@@ -5,6 +5,7 @@ import { TabStackParams } from '../types/navigation';
 
 import { screenDefaultOptions, tabBarDefaultOptions } from './options';
 
+import { useLanguage } from '@/providers/LocalizationProvider';
 import Tasks from '@/screens/Tasks';
 import UserTasks from '@/screens/UserTasks';
 
@@ -14,15 +15,22 @@ import UserTasks from '@/screens/UserTasks';
  */
 const { Navigator, Screen } = createBottomTabNavigator<TabStackParams>();
 
-const AppNavigator: FC = () => (
-  <Navigator screenOptions={tabBarDefaultOptions} initialRouteName="Tasks">
-    <Screen
-      component={Tasks}
-      name="Tasks"
-      options={{ ...screenDefaultOptions, title: 'Tarefas' }}
-    />
-    <Screen component={UserTasks} name="UserTasks" />
-  </Navigator>
-);
+const AppNavigator: FC = () => {
+  const { translate } = useLanguage();
+  return (
+    <Navigator screenOptions={tabBarDefaultOptions} initialRouteName="Tasks">
+      <Screen
+        component={Tasks}
+        name="Tasks"
+        options={{ ...screenDefaultOptions, title: translate('tasks.headerTitle') }}
+      />
+      <Screen
+        component={UserTasks}
+        name="UserTasks"
+        options={{ ...screenDefaultOptions, title: translate('userTasks.headerTitle') }}
+      />
+    </Navigator>
+  );
+};
 
 export default AppNavigator;

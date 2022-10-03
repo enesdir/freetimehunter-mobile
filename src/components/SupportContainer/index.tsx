@@ -1,8 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
+import Accordion from '../Accordion';
+
 import { Content } from './styles';
 
+//import App from '@/components/AccordionList';
 import Button from '@/components/Button';
 import { ButtonContainer } from '@/components/ButtonContainer';
 import Container from '@/components/Container';
@@ -19,17 +22,19 @@ const SupportContainer = (): JSX.Element => {
   const { navigate } = useNavigation<NavigationProp>();
   return (
     <Container>
-      <Spacer size={32} />
       <Title>{translate('support.headerTitle')} </Title>
-      <Spacer size={32} />
+      <Spacer size={4} />
       <Text primary size="3xl">
-        <Text>{translate('support.heroText')} </Text>
+        <Text style={{ textAlign: 'center' }}>{translate('support.heroText')} </Text>
       </Text>
-      <Spacer size={32} />
+      <Content>
+        <Accordion />
+      </Content>
+      <Spacer size={70} />
       <Content>
         <ButtonContainer>
           <Button
-            primary
+            secondary
             buttonSize="full"
             onPress={() => navigate('Onboard', { screen: 'Settings' })}
           >

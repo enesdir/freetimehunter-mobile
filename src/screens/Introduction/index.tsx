@@ -15,14 +15,14 @@ const Introduction: FC = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Container>
-        <Spacer size={72} />
+        <Spacer size={24} />
         <Banner />
         <Spacer size={32} />
         <Title>{translate('introduction.title')} </Title>
         <Text secondary weight="regular" size="xl">
           {translate('introduction.heroText')}
         </Text>
-        <Spacer size={72} />
+        <Spacer size={40} />
         <NavigationButtons />
       </Container>
     </SafeAreaView>

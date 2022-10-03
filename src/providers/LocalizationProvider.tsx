@@ -1,11 +1,12 @@
 import * as Localization from 'expo-localization';
+import { TranslateOptions } from 'i18n-js';
 import React, { useContext, useEffect, useMemo, useRef, useState, ReactNode } from 'react';
 import { AppState, AppStateStatus, Platform } from 'react-native';
 
 import { handleLocalization } from '@/utils/localization/actions';
 import { defaultLanguage } from '@/utils/localization/constants';
 import { translate } from '@/utils/localization/translate';
-import { TDefaultLangKey } from '@/utils/localization/translations';
+import { TxKeyPath } from '@/utils/localization/translations';
 
 export const LocalizationContext = React.createContext({
   translate,
@@ -26,7 +27,7 @@ export const LocalizationProvider = ({ children }: LocalizationProviderProps) =>
 
   const localization = useMemo(
     () => ({
-      translate: (key: TDefaultLangKey, config?: any) =>
+      translate: (key: TxKeyPath, config?: TranslateOptions) =>
         translate(key, { locale: locale.locale, ...config }),
       locale,
       setLocate,

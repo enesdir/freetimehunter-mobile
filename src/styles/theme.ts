@@ -9,7 +9,10 @@ const light = {
   colors: {
     ...Colors.common,
     background: Colors.light.background,
+    secondaryBackground: Colors.light.secondaryBackground,
     primary: Colors.light.primary,
+    secondary: Colors.light.secondary,
+    brand: Colors.light.brand,
     text: Colors.light.text,
   },
   fonts,
@@ -25,7 +28,10 @@ const dark = {
   colors: {
     ...Colors.common,
     background: Colors.dark.background,
+    secondaryBackground: Colors.dark.secondaryBackground,
     primary: Colors.dark.primary,
+    secondary: Colors.dark.secondary,
+    brand: Colors.dark.brand,
     text: Colors.dark.text,
   },
   fonts,

@@ -18,11 +18,15 @@ export const StyledButton = styled.Pressable<StyledButtonProps>`
     align-items: center;
     ${primary &&
     css`
-      background-color: ${theme.colors.text};
+      background-color: ${theme.colors.secondary};
     `}
     ${secondary &&
     css`
       background-color: 'transparent';
+    `}
+    ${tertiary &&
+    css`
+      background-color: ${theme.colors.brand};
     `}
     ${warning &&
     css`

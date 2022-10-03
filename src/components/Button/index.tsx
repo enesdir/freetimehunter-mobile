@@ -11,13 +11,27 @@ const Button: FC<IButtonProps> = ({
   children,
   primary,
   secondary,
+  tertiary,
   warning,
   buttonSize,
   ...rest
 }) => {
   return (
-    <StyledButton primary={primary} secondary={secondary} buttonSize={buttonSize} {...rest}>
-      <Text weight="medium" size="xl" tertiary={primary} primary={secondary} warning={warning}>
+    <StyledButton
+      primary={primary}
+      secondary={secondary}
+      tertiary={tertiary}
+      buttonSize={buttonSize}
+      {...rest}
+    >
+      <Text
+        weight="medium"
+        size="xl"
+        tertiary={tertiary}
+        primary={primary}
+        secondary={primary}
+        warning={warning}
+      >
         {children}
       </Text>
     </StyledButton>

@@ -1,9 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
 
-import type { Tabs } from '@/types/navigation';
+import type { TabStack } from '@/types/navigation';
 
 type TabBarIcons = {
-  [screenName in Tabs]: {
+  [screenName in TabStack]: {
     onFocusIcon: keyof typeof Ionicons.glyphMap;
     onBlurIcon: keyof typeof Ionicons.glyphMap;
   };

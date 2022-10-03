@@ -23,7 +23,7 @@ export const tabBarDefaultOptions: TabScreenOptions = ({ route }) => ({
 
 export const screenDefaultOptions = (): NativeStackNavigationOptions => ({
   headerShadowVisible: false,
-  headerTintColor: colors.primary,
+  headerTintColor: colors.secondary,
   orientation: 'portrait',
 
   // this setup makes large title work on iOS

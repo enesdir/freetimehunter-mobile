@@ -29,7 +29,7 @@ const NavigationButtons: FC = () => {
       >
         {translate('introduction.supportButton')}
       </Button>
-      <Button primary buttonSize="semiWidth" onPress={handleApp}>
+      <Button tertiary buttonSize="semiWidth" onPress={handleApp}>
         {translate('introduction.enterButton')}
       </Button>
     </ButtonContainer>
